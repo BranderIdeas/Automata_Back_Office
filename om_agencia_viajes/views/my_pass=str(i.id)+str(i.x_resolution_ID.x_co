@@ -1,0 +1,38 @@
+      my_pass=str(i.id)+str(i.x_resolution_ID.x_consecutive)
+
+      
+      my_pass=str(i.id)+str(i.x_resolution_ID.x_consecutive)
+     
+      #Crea user odoo si no tiene
+      search_user = env["res.users"].search([("login","=",i.x_studio_documento_1)])
+      if search_user:
+        env['mail.template'].browse(37).send_mail(i.id,force_send=True)
+      else:
+        env['mail.template'].browse(29).send_mail(i.id,force_send=True)
+        env["res.users"].create({
+          "name":i.x_studio_nombres+" "+i.x_studio_apellidos,
+          "login" : i.x_studio_documento_1,
+          "groups_id":[45,8],
+          "password":my_pass,
+          "new_password": my_pass
+        })
+
+Emprendedores (Start-Ups)
+Centros de desarrollo tecnológico e innovación
+Grupos de investigación
+Programas de estudiantes y semilleros
+Empresas tecnológicas
+
+
+  salir() {
+    localStorage.removeItem("cedula");
+    localStorage.removeItem("rol");
+    localStorage.removeItem("token");
+    this.router.navigate(['/']);
+  }
+
+  href="{{ url + 'excel/formato_inmuebles_masivo.xlsx' }}"
+
+  url = environment.url;
+
+  
