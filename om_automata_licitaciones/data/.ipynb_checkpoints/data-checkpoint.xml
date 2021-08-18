@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<odoo>
+    
+    <data noupdate="1">
+        <record model="om_automata_licitaciones.states_crm_leads" id="data_states_crm_leads_draft">
+            <field name="name">Borrador</field>
+            <field name="description">Borrador</field>
+        </record>
+        <record model="om_automata_licitaciones.states_crm_leads" id="data_states_crm_leads_convocated">
+            <field name="name">Convocado</field>
+            <field name="description">Convocado</field>
+        </record>
+    </data>
+    
+    <data noupdate="1">
+        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_insuficients_costs">
+            <field name="name">Costos Insuficientes</field>
+            <field name="description">Costos Insuficientes</field>
+        </record>
+        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_pay_method">
+            <field name="name">Metodo de Pago</field>
+            <field name="description">Metodo de Pago</field>
+        </record>
+        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_experience">
+            <field name="name">Experiencia</field>
+            <field name="description">Experiencia</field>
+        </record>
+        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_indicators">
+            <field name="name">Indicadores</field>
+            <field name="description">Indicadores</field>
+        </record>
+        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_certificates">
+            <field name="name">Certificaciones, Partner o Distribuidor Autorizado</field>
+            <field name="description">Certificaciones, Partner o Distribuidor Autorizado</field>
+        </record>
+        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_team">
+            <field name="name">Equipo de Trabajo</field>
+            <field name="description">Equipo de Trabajo</field>
+        </record>
+        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_others">
+            <field name="name">Otros</field>
+            <field name="description">Otros</field>
+        </record>
+    </data>
+    
+</odoo>

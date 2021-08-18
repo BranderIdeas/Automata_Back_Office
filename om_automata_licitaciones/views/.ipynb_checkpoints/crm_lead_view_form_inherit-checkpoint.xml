@@ -1,0 +1,48 @@
+<odoo>
+  <data>
+      
+    <!-- Inserta el tab de Info Licitación y los campos de Objeto y Motivo de NO PRESENTADA -->
+    <record model="ir.ui.view" id="crm_lead_view_form_inherit">
+        <field name="name">crm.lead.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='lead']" position="after">
+                <page string="Info. Licitación" name="info_tender">
+                    <group name="info_group">
+                        <group name="info_">
+                            <field name="link"/>
+                            <field name="pay_method"/>
+                        </group>
+                        <group name="info_right">
+                            <field name="dead_line"/>
+                            <field name="platform"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+            <xpath expr="//group[@name='opportunity_partner']" position="inside">
+                <field name="object"/>
+            </xpath>
+            <xpath expr="//field[@name='tag_ids']" position="after">
+                <field name="motive_of_no_presentated_id" options="{'no_create_edit':True, 'no_create': True}"/>
+            </xpath> 
+            <xpath expr="//div[@class='oe_title']" position="before">
+                <h2 style="pointer-events:none;">
+                  <field class="oe_avatar" name="state_tender_id" readonly="1"/>
+                </h2>
+            </xpath> 
+          </field>
+    </record>
+      
+  </data>
+</odoo>
+
+<!--             <xpath expr="//div[@class='oe_title']" position="before">
+                <group name="states_tender" class="oe_avatar">
+                    <group name="states_tender_left" />
+                    <group name="states_tender_rigth">
+                        <field name="state_tender_id" options="{}"/>
+                    </group>
+                </group>
+            </xpath>  -->
