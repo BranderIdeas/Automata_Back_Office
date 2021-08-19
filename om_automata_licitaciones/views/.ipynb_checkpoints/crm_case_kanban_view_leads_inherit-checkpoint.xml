@@ -1,0 +1,17 @@
+<odoo>
+  <data>
+      
+    <!-- Inserta el campo state_tender_id "Estado de Licitación" en la vista kanban -->
+    <record model="ir.ui.view" id="crm_case_kanban_view_leads_inherit">
+        <field name="name">crm.lead.kanban_inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_kanban_view_leads"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('o_kanban_record_bottom')]" position="before">
+                <field name="state_tender_id"/>
+            </xpath>
+          </field>
+    </record>
+      
+  </data>
+</odoo>

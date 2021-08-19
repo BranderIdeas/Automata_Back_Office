@@ -3,10 +3,10 @@
     'name': "Licitaciones",
 
     'summary': """
-        Personalización para CRM""",
+        Personalización de CRM""",
 
     'description': """
-        Personalización para CRM
+        Personalización de CRM para Automata & Brander Ideas SAS
     """,
 
     'author': "Automata & Brander Ideas SAS",
@@ -30,7 +30,12 @@
         'data/data.xml',
         'views/views.xml',
         'views/templates.xml',
+        'views/crm_tender_states.xml',
+        'views/crm_platform.xml',
+        'views/crm_motive_of_not_presentated.xml',
         'views/crm_lead_view_form_inherit.xml',
+        'views/crm_stage_view_form_inherit.xml',
+        'views/crm_case_kanban_view_leads_inherit.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

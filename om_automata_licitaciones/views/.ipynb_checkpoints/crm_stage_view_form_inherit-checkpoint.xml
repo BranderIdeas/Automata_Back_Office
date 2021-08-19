@@ -1,0 +1,29 @@
+<odoo>
+  <data>
+      
+    <!-- Inserta el campo "Estado de Licitación" en la vista arbol -->
+    <record model="ir.ui.view" id="crm_stage_view_tree_inherit">
+        <field name="name">crm.stage.tree_inherit</field>
+        <field name="model">crm.stage</field>
+        <field name="inherit_id" ref="crm.crm_stage_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='team_id']" position="after">
+                <field name="state_tender"/>
+            </xpath>
+          </field>
+    </record>
+      
+    <!-- Inserta el campo "Estado de Licitación" en la vista form -->
+    <record model="ir.ui.view" id="crm_stage_view_form_inherit">
+        <field name="name">crm.stage.form_inherit</field>
+        <field name="model">crm.stage</field>
+        <field name="inherit_id" ref="crm.crm_stage_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='team_id']" position="after">
+                <field name="state_tender"/>
+            </xpath>
+          </field>
+    </record>
+      
+  </data>
+</odoo>

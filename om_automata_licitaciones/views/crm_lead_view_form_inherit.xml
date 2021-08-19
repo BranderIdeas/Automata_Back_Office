@@ -16,7 +16,7 @@
                         </group>
                         <group name="info_right">
                             <field name="dead_line"/>
-                            <field name="platform"/>
+                            <field name="platform" options="{'no_create_edit':True, 'no_create': True}"/>
                         </group>
                     </group>
                 </page>
@@ -37,12 +37,3 @@
       
   </data>
 </odoo>
-
-<!--             <xpath expr="//div[@class='oe_title']" position="before">
-                <group name="states_tender" class="oe_avatar">
-                    <group name="states_tender_left" />
-                    <group name="states_tender_rigth">
-                        <field name="state_tender_id" options="{}"/>
-                    </group>
-                </group>
-            </xpath>  -->
