@@ -36,6 +36,7 @@
         'views/crm_lead_view_form_inherit.xml',
         'views/crm_stage_view_form_inherit.xml',
         'views/crm_case_kanban_view_leads_inherit.xml',
+        'views/crm_menu_tender.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
