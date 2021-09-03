@@ -8,6 +8,6 @@ from odoo import models, fields, api
 
 class custom(models.Model):
     _name = 'om_automata_licitaciones.crm_menu_tender'
-    _description = 'Menu_Licitaciones'
+    _description = 'Licitaciones'
 
     name = fields.Char('Nombre')
