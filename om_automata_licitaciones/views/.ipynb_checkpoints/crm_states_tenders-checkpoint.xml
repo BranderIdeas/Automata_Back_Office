@@ -2,9 +2,9 @@
     <data>
 
         <!-- tree -->
-        <record model="ir.ui.view" id="tender_states_view">
-            <field name="name">tender_states.view</field>
-            <field name="model">om_automata_licitaciones.tender_states</field>
+        <record model="ir.ui.view" id="crm_states_tenders_view">
+            <field name="name">crm_states_tenders.view</field>
+            <field name="model">om_automata_licitaciones.crm_states_tenders</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
@@ -13,9 +13,9 @@
         </record>
 
         <!-- search -->
-        <record model="ir.ui.view" id="om_automata_licitaciones.tender_states_search">
-            <field name="name">om_automata_licitaciones.tender_states.search</field>
-            <field name="model">om_automata_licitaciones.tender_states</field>
+        <record model="ir.ui.view" id="om_automata_licitaciones.crm_states_tenders_search">
+            <field name="name">om_automata_licitaciones.crm_states_tenders.search</field>
+            <field name="model">om_automata_licitaciones.crm_states_tenders</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="name"/>
@@ -24,9 +24,9 @@
         </record>
 
         <!-- form -->
-        <record model="ir.ui.view" id="oe_agencia_viajes_tender_states_form">
-            <field name="name">om_automata_licitaciones.tender_states.form</field>
-            <field name="model">om_automata_licitaciones.tender_states</field>
+        <record model="ir.ui.view" id="oe_automata_licitaciones_crm_states_tenders_form">
+            <field name="name">om_automata_licitaciones.crm_states_tenders.form</field>
+            <field name="model">om_automata_licitaciones.crm_states_tenders</field>
             <field name="arch" type="xml">
                 <form string="Estados de Licitación">
                     <sheet>
@@ -41,9 +41,9 @@
         </record>
 
         <!-- actions opening views on models -->
-        <record model="ir.actions.act_window" id="om_automata_licitaciones_tender_states">
+        <record model="ir.actions.act_window" id="om_automata_licitaciones_crm_states_tenders">
             <field name="name">Estados de Licitación</field>
-            <field name="res_model">om_automata_licitaciones.tender_states</field>
+            <field name="res_model">om_automata_licitaciones.crm_states_tenders</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
@@ -53,10 +53,10 @@
         </record>
 
         <!-- menu item -->
-        <menuitem id="tender_states_menu_item" 
+        <menuitem id="crm_states_tenders_menu_item" 
                   name="Estados de Licitación"
-                  parent="crm.menu_crm_config_lead"
-                  action="om_automata_licitaciones_tender_states"
+                  parent="om_automata_licitaciones.crm_menu_tender"
+                  action="om_automata_licitaciones_crm_states_tenders"
                   sequence="12"/>
         
     </data>

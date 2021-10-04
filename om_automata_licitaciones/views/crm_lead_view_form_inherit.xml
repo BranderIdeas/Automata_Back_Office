@@ -7,6 +7,11 @@
         <field name="model">crm.lead</field>
         <field name="inherit_id" ref="crm.crm_lead_view_form"/>
         <field name="arch" type="xml">
+            <xpath expr="//button[@name='193']" position="after">
+                <button name="193" string="Marcar como no presentada" type="action" class="oe_highlight" />
+<!--                         context="{'default_lead_id': active_id}" 
+                        attrs="{'invisible': ['|', ('type', '=', 'lead'),('active', '=', False),('probability', '&lt;', 100)]}"/> -->
+            </xpath>
             <xpath expr="//page[@name='lead']" position="after">
                 <page string="Info. Licitación" name="info_tender">
                     <group name="info_group">
@@ -23,17 +28,21 @@
             </xpath>
             <xpath expr="//group[@name='opportunity_partner']" position="inside">
                 <field name="object"/>
+                <field name="motive_of_no_presentated_id" invisible="1"/>
             </xpath>
-            <xpath expr="//field[@name='tag_ids']" position="after">
-                <field name="motive_of_no_presentated_id" options="{'no_create_edit':True, 'no_create': True}"/>
-            </xpath> 
             <xpath expr="//div[hasclass('oe_title')]" position="before">
-                <h2 style="pointer-events:none;">
-                  <field class="oe_avatar" name="state_tender_id" readonly="1"/>
-                </h2>
+                <field name="state_tender_id" invisible="1"/>
+                <widget name="web_ribbon" bg_color="bg-secondary" title="Borrador" attrs="{'invisible': [('state_tender_id', '!=', 1)]}"/>
+                <widget name="web_ribbon" bg_color="bg-info" title="Convocado" attrs="{'invisible': [('state_tender_id', '!=', 2)]}"/>
             </xpath> 
           </field>
     </record>
+      
+    <!-- menu item -->
+    <menuitem id="crm_menu_tender"
+              name="Licitaciones"
+              parent="crm.crm_menu_root"
+              sequence="30"/>
       
   </data>
 </odoo>

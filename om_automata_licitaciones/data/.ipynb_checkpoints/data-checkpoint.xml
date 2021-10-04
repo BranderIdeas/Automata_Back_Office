@@ -2,35 +2,47 @@
 <odoo>
     
     <data noupdate="1">
-        <record model="om_automata_licitaciones.states_crm_leads" id="data_states_crm_leads_draft">
+        <record model="om_automata_licitaciones.crm_states_tenders" id="data_crm_states_tenders_draft">
             <field name="name">Borrador</field>
         </record>
-        <record model="om_automata_licitaciones.states_crm_leads" id="data_states_crm_leads_convocated">
+        <record model="om_automata_licitaciones.crm_states_tenders" id="data_crm_states_tenders_convocated">
             <field name="name">Convocado</field>
         </record>
     </data>
     
     <data noupdate="1">
-        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_insuficients_costs">
+        <record model="om_automata_licitaciones.crm_motive_of_not_presentated" id="data_crm_motive_of_not_presentated_insuficients_costs">
             <field name="name">Costos Insuficientes</field>
         </record>
-        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_pay_method">
+        <record model="om_automata_licitaciones.crm_motive_of_not_presentated" id="data_crm_motive_of_not_presentated_pay_method">
             <field name="name">Metodo de Pago</field>
         </record>
-        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_experience">
+        <record model="om_automata_licitaciones.crm_motive_of_not_presentated" id="data_crm_motive_of_not_presentated_experience">
             <field name="name">Experiencia</field>
         </record>
-        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_indicators">
+        <record model="om_automata_licitaciones.crm_motive_of_not_presentated" id="data_crm_motive_of_not_presentated_indicators">
             <field name="name">Indicadores</field>
         </record>
-        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_certificates">
+        <record model="om_automata_licitaciones.crm_motive_of_not_presentated" id="data_crm_motive_of_not_presentated_certificates">
             <field name="name">Certificaciones, Partner o Distribuidor Autorizado</field>
         </record>
-        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_team">
+        <record model="om_automata_licitaciones.crm_motive_of_not_presentated" id="data_crm_motive_of_not_presentated_team">
             <field name="name">Equipo de Trabajo</field>
         </record>
-        <record model="om_automata_licitaciones.motive_of_not_presentated" id="data_motive_of_not_presentated_others">
+        <record model="om_automata_licitaciones.crm_motive_of_not_presentated" id="data_crm_motive_of_not_presentated_others">
             <field name="name">Otros</field>
+        </record>
+    </data>
+    
+    <data noupdate="1">
+        <record model="om_automata_licitaciones.crm_platform" id="data_tender_states_secop1">
+            <field name="name">SECOP 1</field>
+        </record>
+        <record model="om_automata_licitaciones.crm_platform" id="data_tender_states_secop2">
+            <field name="name">SECOP II</field>
+        </record>
+        <record model="om_automata_licitaciones.crm_platform" id="data_tender_states_privated">
+            <field name="name">Privada</field>
         </record>
     </data>
     

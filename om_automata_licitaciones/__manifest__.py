@@ -30,13 +30,12 @@
         'data/data.xml',
         'views/views.xml',
         'views/templates.xml',
-        'views/crm_tender_states.xml',
+        'views/crm_states_tenders.xml',
         'views/crm_platform.xml',
         'views/crm_motive_of_not_presentated.xml',
         'views/crm_lead_view_form_inherit.xml',
-        'views/crm_stage_view_form_inherit.xml',
+        'views/crm_stage_view_inherit.xml',
         'views/crm_case_kanban_view_leads_inherit.xml',
-        'views/crm_menu_tender.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

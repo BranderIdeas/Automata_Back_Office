@@ -2,9 +2,9 @@
     <data>
 
         <!-- tree -->
-        <record model="ir.ui.view" id="motive_of_not_presentated_view">
-            <field name="name">motive_of_not_presentated.view</field>
-            <field name="model">om_automata_licitaciones.motive_of_not_presentated</field>
+        <record model="ir.ui.view" id="crm_motive_of_not_presentated_view">
+            <field name="name">crm_motive_of_not_presentated.view</field>
+            <field name="model">om_automata_licitaciones.crm_motive_of_not_presentated</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
@@ -13,9 +13,9 @@
         </record>
 
         <!-- search -->
-        <record model="ir.ui.view" id="om_automata_licitaciones.motive_of_not_presentated_search">
-            <field name="name">om_automata_licitaciones.motive_of_not_presentated.search</field>
-            <field name="model">om_automata_licitaciones.motive_of_not_presentated</field>
+        <record model="ir.ui.view" id="om_automata_licitaciones.crm_motive_of_not_presentated_search">
+            <field name="name">om_automata_licitaciones.crm_motive_of_not_presentated.search</field>
+            <field name="model">om_automata_licitaciones.crm_motive_of_not_presentated</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="name"/>
@@ -24,9 +24,9 @@
         </record>
 
         <!-- form -->
-        <record model="ir.ui.view" id="oe_agencia_viajes_motive_of_not_presentated_form">
-            <field name="name">om_automata_licitaciones.motive_of_not_presentated.form</field>
-            <field name="model">om_automata_licitaciones.motive_of_not_presentated</field>
+        <record model="ir.ui.view" id="oe_agencia_viajes_crm_motive_of_not_presentated_form">
+            <field name="name">om_automata_licitaciones.crm_motive_of_not_presentated.form</field>
+            <field name="model">om_automata_licitaciones.crm_motive_of_not_presentated</field>
             <field name="arch" type="xml">
                 <form string="Motivo de NO PRESENTADA">
                     <sheet>
@@ -41,9 +41,9 @@
         </record>
 
         <!-- actions opening views on models -->
-        <record model="ir.actions.act_window" id="om_automata_licitaciones_motive_of_not_presentated">
+        <record model="ir.actions.act_window" id="om_automata_licitaciones_crm_motive_of_not_presentated">
             <field name="name">Motivos de NO PRESENTADA</field>
-            <field name="res_model">om_automata_licitaciones.motive_of_not_presentated</field>
+            <field name="res_model">om_automata_licitaciones.crm_motive_of_not_presentated</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
@@ -53,10 +53,10 @@
         </record>
 
         <!-- menu item -->
-        <menuitem id="motive_of_not_presentated_menu_item" 
+        <menuitem id="crm_motive_of_not_presentated_menu_item" 
                   name="Motivos de NO PRESENTADA"
-                  parent="crm.menu_crm_config_lead"
-                  action="om_automata_licitaciones_motive_of_not_presentated"
+                  parent="om_automata_licitaciones.crm_menu_tender"
+                  action="om_automata_licitaciones_crm_motive_of_not_presentated"
                   sequence="14"/>
         
     </data>

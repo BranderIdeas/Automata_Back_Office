@@ -55,7 +55,7 @@
         <!-- menu item -->
         <menuitem id="crm_platform_menu_item" 
                   name="Plataforma"
-                  parent="crm.menu_crm_config_lead"
+                  parent="om_automata_licitaciones.crm_menu_tender"
                   action="om_automata_licitaciones_crm_platform"
                   sequence="10"/>
         
