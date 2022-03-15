@@ -3,7 +3,8 @@
     'name': "Licitaciones",
 
     'summary': """
-        Personalización de CRM""",
+        Personalización de CRM
+    """,
 
     'description': """
         Personalización de CRM para Automata & Brander Ideas SAS
